@@ -1,0 +1,14 @@
+{
+  "name": "cano-cube-routers",
+  "version": "1.0.0",
+  "description": "A cube for cano microframework for bind routes to app.",
+  "main": "index.js",
+  "author": "Antonio Mejias",
+  "license": "MIT",
+  "dependencies": {
+    "koa-router": "^7.4.0",
+    "cano-cube":"git+https://github.com/cano-koa/cano-cube.git",
+    "lodash": "^4.17.10",
+    "require-all": "^2.2.0"
+  }
+}
