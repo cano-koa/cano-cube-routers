@@ -15,7 +15,7 @@ class RoutersCube extends Cube {
      * @constructs
      * @author Antonio Mejias
      */
-    constructor(cano, config = {mainPath: '/'}) {
+    constructor(cano, config) {
         super(cano)
         this.config = config;
     }
@@ -56,8 +56,7 @@ class RoutersCube extends Cube {
     }
 
     _bindToCano(groupRouter) {
-        const mainRouter = new Router()
-        mainRouter.use(this.config.mainPath, groupRouter.routes())
+        const mainRouter = this.config ? new Router().use(this.config.mainPath, groupRouter.routes()) : groupRouter;
         this.bindToCano(mainRouter.routes())
         this.bindToCano(mainRouter.allowedMethods())
     }

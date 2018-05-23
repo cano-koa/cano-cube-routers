@@ -1,6 +1,6 @@
 {
   "name": "cano-cube-routers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cube for cano microframework for bind routes to app.",
   "main": "index.js",
   "author": "Antonio Mejias",
